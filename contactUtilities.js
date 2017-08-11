@@ -1,5 +1,4 @@
 var exports = module.exports ={};
-//Should return the largest length number of the supplied array
 exports.returnLargestLength = function(arrayToCheck){
   var largestElementLength = 0;
   arrayToCheck.forEach(function(element){
@@ -10,7 +9,6 @@ exports.returnLargestLength = function(arrayToCheck){
   return largestElementLength;
 };
 
-//Takes in a contact obj
 exports.sortByFirstName = function(a, b){
   var nameA = a["first_name"].toUpperCase();
   var nameB = b["first_name"].toUpperCase();
@@ -23,4 +21,3 @@ exports.sortByFirstName = function(a, b){
 
   return 0;
 };
-//Try to do the above, but with a mapping function instead!

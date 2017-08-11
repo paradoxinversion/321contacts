@@ -1,7 +1,6 @@
 var contactUtilities = require("./contactUtilities");
 let contactStorage = []; // here is where you'll store your contacts
 
-
 const addContact = function(firstName, lastName, email) {
   var contact = {
     "first_name" : firstName,
@@ -10,7 +9,6 @@ const addContact = function(firstName, lastName, email) {
   };
   contactStorage.push(contact);
 };
-
 
 const addContacts = function(contacts) {
   console.log("Loading Contacts...");
@@ -36,6 +34,7 @@ const printContacts = function() {
       return currentValue["email"];
     })
   );
+
   contactStorage.sort(contactUtilities.sortByFirstName).forEach(function(contact){
     //We have the length of the longest name, so we should make sure names have
     //padding up to one past that length (to add one white space after)
