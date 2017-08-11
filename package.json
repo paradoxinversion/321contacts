@@ -1,0 +1,14 @@
+{
+  "name": "321contacts",
+  "version": "1.0.0",
+  "description": "A really simple contact display app",
+  "main": "contacts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jedai Saboteur",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.25.0"
+  }
+}
