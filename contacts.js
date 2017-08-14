@@ -1,5 +1,5 @@
 var contactUtilities = require("./contactUtilities");
-let contactStorage = []; // here is where you'll store your contacts
+let contactStorage = [];
 
 const addContact = function(firstName, lastName, email) {
   var contact = {

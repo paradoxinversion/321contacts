@@ -1,12 +1,16 @@
 var exports = module.exports ={};
+
+const getElementLength = function(currentValue){
+  return currentValue.length;
+};
+
+const getMax = function(a,b){
+  return Math.max(a,b);
+};
+
 exports.returnLargestLength = function(arrayToCheck){
-  var largestElementLength = 0;
-  arrayToCheck.forEach(function(element){
-    if (element.length > largestElementLength ){
-      largestElementLength = element.length;
-    }
-  });
-  return largestElementLength;
+  var stringValues = arrayToCheck.map(getElementLength).reduce(getMax);
+  return stringValues;
 };
 
 exports.sortByFirstName = function(a, b){
@@ -18,6 +22,5 @@ exports.sortByFirstName = function(a, b){
   if (nameA > nameB){
     return 1;
   }
-
   return 0;
 };
